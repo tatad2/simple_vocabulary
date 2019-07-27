@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>simple vocabulary</title>
+
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="main" style="width: 60%">
+        <h1 style="text-align: center; margin: 20px">register / login</h1>
+        
+        <!-- <div style="display: flex; justify-content: center; flex-direction: row"> -->
+        <div>
+            <label for="basic-url">username (3~20 letters)</label>
+            <div class="input-group">
+                    <input id="username" type="text" class="form-control">
+            </div>
+                   
+            <label for="basic-url">password (6~20 letters)</label>
+            <div class="input-group">
+                    <input id="password" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div style="height: 30px"></div>
+
+        <div style="display: flex; justify-content: center">
+                <button id="button-register" type="button" class="btn btn-success" onclick="register()" aria-disabled="false">register</button>
+                <div style="width: 10%"></div>
+                <button id="button-login" type="button" class="btn btn-success" onclick="login()" aria-disabled="false">login</button>
+        </div>
+</body>

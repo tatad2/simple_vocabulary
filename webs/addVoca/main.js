@@ -4,10 +4,9 @@ function Word() {
     this.initialize.apply(this, arguments); 
 }
 
-Word.prototype.initialize = function(word, trans, part, sent) {
+Word.prototype.initialize = function(word, trans, sent) {
     this.word = word;
     this.trans = trans; 
-    this.part = part; 
     this.sent = sent; 
 }
 
@@ -18,7 +17,6 @@ Word.prototype.check = function() {
 }
 
 Word.prototype.parse = function() {
-    if(this.part == "") this.part = "-"; 
     if(this.sent == "") this.sent = "-"; 
 
     var temp = this.word.split(" "); this.word = ""; 
@@ -49,7 +47,6 @@ function upload_word() {
     var word = new Word(
         document.getElementById("word").value, 
         document.getElementById("trans").value, 
-        document.getElementById("part").value, 
         document.getElementById("sent").value
     ); 
 

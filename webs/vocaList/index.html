@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>simple vocabulary</title>
+    
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="../../lib/js/bootstrap.bundle.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1 style="text-align: center; margin: 20px;">vocabulary list</h1>
+        
+        <h2 id="no-voca" style="display: none">你还没有添加过词汇！快去添加几个吧</h2>
+
+        <div class="dropdown" style="margin-bottom: 10px">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              sort by
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a id="sort-by-lexicographic"class="dropdown-item" onclick="sort_by_lexicographic()">sort by lexicographic</a>
+              <a id="sort-by-mastery"class="dropdown-item" onclick="sort_by_mastery()">sort by mastery</a>
+            </div>
+        </div>
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+
+        <ul id="voca-list" class="list-group">
+        </ul>
+    </div>
+</body>
